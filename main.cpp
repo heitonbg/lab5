@@ -5,10 +5,12 @@ using namespace std;
  
 int main()
 {
+    int N, M;
+    cout << "Введите количество чисел в массиве 1 и 2:" << endl;
+    cin >> N; 
+    cin >> M;
     double sum = 0;
     double sum1 = 0;
-    const int N = 5;
-    const int M = 5;
     int S[N];
     int W[M];
     mt19937 gen {random_device()()};
@@ -26,7 +28,7 @@ int main()
             sum = sum + 1;
         }
     }
-    cout << "S:\n" ;
+    cout << "Количество отрицательных чисел в S:\n" ;
     cout << sum << endl;
 //конец 1 массива
 //начало 2
@@ -42,7 +44,7 @@ int main()
             sum1 = sum1 + 1;
         }
     }
-    cout << "W:\n" ;
+    cout << "Количество отрицательных чисел в W:\n" ;
     cout << sum1 << endl;
 //конец 2
 }
